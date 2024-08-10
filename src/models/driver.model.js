@@ -5,7 +5,7 @@ import path from 'path';
 const _filename = fileURLToPath(import.meta.url);
 const _dirname = path.dirname(_filename);
 
-const driverFilePath = path.join(_dirname, '../../db/drivers.json');
+const driverFilePath = path.join(_dirname, '../../data/drivers.json');
 
 const writeFs = async (driver) => {
     await fs.writeFile(driverFilePath, JSON.stringify(driver, null, 2));
